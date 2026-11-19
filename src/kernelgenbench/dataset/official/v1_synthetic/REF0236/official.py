@@ -1,0 +1,4 @@
+# https://github.com/deepspeedai/DeepSpeed/blob/8af59b2e7a91c227081617240e98aa282eadc5f9/deepspeed/runtime/zenflow/zenflow_stage_1_and_2.py#L678-L693
+from deepspeed.runtime.zenflow.zenflow_stage_1_and_2 import ZenFlowZeroOptimizerParallel
+
+run = ZenFlowZeroOptimizerParallel.async_inplace_copy_grad_to_fp32_buffer_from_gpu
